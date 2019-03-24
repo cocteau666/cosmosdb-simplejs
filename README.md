@@ -4,6 +4,10 @@ Library to connect Microsoft Cosmos DB directly from WEB browser using JavaScrip
 ## Depends on
 Google crypto-js
 
+## Setup
+You have to change a CORS setting on Azure portal.
+https://azure.microsoft.com/en-us/blog/azure-cosmos-now-supports-cross-origin-resource-sharing-cors/
+
 ## How to use
 Include crypto-js and cosmosdb.js
 
