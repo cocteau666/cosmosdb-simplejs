@@ -2,10 +2,10 @@ function getAuthorizationTokenUsingMasterKey(verb, resourceType, resourceId, dat
 
     var key = CryptoJS.enc.Base64.parse(masterKey);
   
-    var text = (verb || "") + "\n" +   
-               (resourceType || "") + "\n" +   
-               (resourceId || "") + "\n" +   
-               date + "\n" +   
+    var text = (verb || "").toLowerCase() + "\n" +   
+               (resourceType || "").toLowerCase() + "\n" +   
+               (resourceId || "").toLowerCase() + "\n" +   
+               date.toLowerCase() + "\n" +   
                "\n"; 
 
     var signature = CryptoJS.HmacSHA256(text, key).toString(CryptoJS.enc.Base64);
