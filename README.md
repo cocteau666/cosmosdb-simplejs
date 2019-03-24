@@ -6,7 +6,7 @@ Google crypto-js
 
 ## Setup
 You have to change a CORS setting on Azure portal.
-[Portal](cors.png "How to edit CORS")
+[see](cors.png "How to edit CORS")
 
 ## How to use
 Include crypto-js and cosmosdb.js
